@@ -17,7 +17,7 @@ A function that uses Twilio to call a person and rick roll them.
 | Name              | Description                          | Location | Type               | Sample Value                  |
 | ----------------- | ------------------------------------ | -------- | ------------------ | ----------------------------- |
 | Content-Type      | The content type of the request body | Header   | `application/json` | N/A                           |
-| phoneNumber       | Phone number of person to prank      | Body     | String             | `Write a haiku about Mondays` |
+| phoneNumber       | Phone number of person to prank      | Body     | String             | `+919876543210` |
 
 **Request**
 

@@ -12,6 +12,8 @@ export default async ({ req, res, log, error }) => {
     throwIfMissing(process.env, ['TWILIO_ACCOUNT_SID', 'TWILIO_AUTH_TOKEN', 'TWILIO_PHONE_NUMBER']);
     throwIfMissing(req.body, ['phoneNumber']);
   } catch (err) {
+    error(err);
+    
     return res.json({ 
       ok: false,
       error: err.message 
